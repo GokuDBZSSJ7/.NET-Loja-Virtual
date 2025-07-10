@@ -45,7 +45,7 @@ LojaVirtual.sln \
 
 ## ⚙️ Requisitos
 
-- .NET SDK 88
+- .NET SDK 8
 - MySQL Server instalado e rodando
 - Git
 - Editor de código Visual Studio Code
