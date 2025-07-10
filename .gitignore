@@ -1,0 +1,45 @@
+# Build
+**/bin/
+**/obj/
+**/Migrations/
+
+# Configurações de usuário
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+.history/
+
+# Visual Studio
+.vs/
+
+# Sistema
+Thumbs.db
+Desktop.ini
+
+# Logs e dados temporários
+*.log
+
+# Arquivos de publish
+publish/
+wwwroot/
+.env
+.env.*
+
+# Testes e cobertura
+TestResults/
+coverage/
+
+# Backup ou arquivos temporários de editor
+*~
+*.swp
+*.bak
+*.tmp
+
+# Pacotes (não commitáveis)
+packages/
+.nuget/
+*.nupkg
