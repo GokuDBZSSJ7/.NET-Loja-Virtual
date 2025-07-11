@@ -10,9 +10,17 @@ public class AppDbContext : DbContext
 
     public DbSet<Product> Products => Set<Product>();
 
+    public DbSet<Customer> Customers => Set<Customer>();
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
+
+        modelBuilder.Entity<Product>()
+        .HasOne(p => p.Category)
+        .WithMany()
+        .HasForeignKey(p => p.CategoryId)
+        .OnDelete(DeleteBehavior.Restrict);
 
         base.OnModelCreating(modelBuilder);
     }
