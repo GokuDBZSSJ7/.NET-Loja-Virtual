@@ -74,4 +74,4 @@ dotnet ef database update --project Infrastructure --startup-project WebApi
 dotnet run --project WebApi
 
 # 6. Acessar a documentação Swagger
-https://localhost:5001/swagger
+http://localhost:5101/swagger
