@@ -1,0 +1,22 @@
+### GET todos os produtos
+GET http://localhost:5101/api/product
+Accept: application/json
+
+###
+
+### POST um novo produto
+POST http://localhost:5101/api/product
+Content-Type: application/json
+
+{
+  "name": "Camisa Preta",
+  "description": "Camisa básica de algodão",
+  "price": 89.99,
+  "stock": 20,
+  "categoryId": 1
+}
+
+###
+
+### DELETE um produto (exemplo ID 3)
+DELETE http://localhost:5101/api/product/1
