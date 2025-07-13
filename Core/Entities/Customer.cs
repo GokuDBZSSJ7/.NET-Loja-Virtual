@@ -11,4 +11,5 @@ public class Customer : BaseEntity
     public string ZipCode { get; set; } = string.Empty;
     public string Address { get; set; } = string.Empty;
     public CustomerType Type { get; set; } = CustomerType.Normal;
+    public ICollection<Order> Orders { get; set; } = new List<Order>();
 }
