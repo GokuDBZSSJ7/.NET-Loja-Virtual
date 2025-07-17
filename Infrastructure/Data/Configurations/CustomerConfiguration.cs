@@ -45,7 +45,7 @@ public class CustomerConfiguration : IEntityTypeConfiguration<Customer>
 
         entity.Property(e => e.Type)
               .HasColumnName("type")
-              .HasConversion<string>()
+              .HasConversion<int>()
               .IsRequired();
     }
 }
