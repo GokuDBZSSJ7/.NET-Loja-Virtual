@@ -12,5 +12,6 @@ public class Order : BaseEntity
     public Customer? Customer { get; set; }
     public ICollection<OrderItem> Items { get; set; } = new List<OrderItem>();
 
-
+    public int? CouponId { get; set; }
+    public Coupon? Coupon { get; set; }
 }

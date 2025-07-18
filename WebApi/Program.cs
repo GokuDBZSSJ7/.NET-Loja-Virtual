@@ -27,6 +27,9 @@ builder.Services.AddScoped<OrderService>();
 builder.Services.AddScoped<IOrderItemRepository, OrderItemRepository>();
 builder.Services.AddScoped<OrderItemService>();
 
+builder.Services.AddScoped<ICouponRepository, CouponRepository>();
+builder.Services.AddScoped<CouponService>();
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
