@@ -67,4 +67,10 @@ public class CustomerService
 
         await _repository.DeleteAsync(existing);
     }
+
+    public bool VerifyPassword(Customer customer, string password)
+    {
+        var result = _passwordHasher.VerifyHashedPassword(customer, customer.PasswordHash, password);
+        return result == PasswordVerificationResult.Success;
+    }
 }
